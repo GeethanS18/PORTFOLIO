@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Experience</title>
+    <link rel="stylesheet" href="styles.css">
+       <style>
+            body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('https://images.unsplash.com/photo-1522199755839-a2bacb67c546') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    transform: translateY(50px);
+    
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f0a500;
+}
+
+.experience-section {
+    padding: 100px 20px 50px;
+    text-align: center;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 60px;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease-out forwards;
+    transform: translateY(50px);
+
+    
+}
+
+.experience-section h2 {
+    margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.experience-item {
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+
+.experience-item h3 {
+    margin: 10px 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.experience-item p {
+    margin: 5px 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.experience-item:nth-child(1) {
+    animation: fadeInUp 1s ease-out forwards 0.5s;
+    transform: translateY(50px);
+}
+
+.experience-item:nth-child(2) {
+    animation: fadeInUp 1s ease-out forwards 1s;
+    transform: translateY(50px);
+}
+
+.experience-item:nth-child(3) {
+    animation: fadeInUp 1s ease-out forwards 1.5s;
+    transform: translateY(50px);
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 768px) {
+    nav ul li {
+        margin: 0 25px;
+    }
+
+    .experience-section {
+        padding: 120px 70px;
+        transform: translateY(20px);
+        animation: fadeInUp 1s ease-out forwards;
+    }
+
+    .experience-item p {
+        max-width: 800px;
+        margin: 10px auto;
+        transform: translateY(20px);
+        animation: fadeInUp 1s ease-out forwards;
+    }
+}
+
+       </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Home1.html">Home</a></li>
+                <li><a href="About1.html">About</a></li>
+                <li><a href="ex.html">Experience</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="experience" class="experience-section">
+            <h1>Experience</h1>
+            <div class="experience-item">
+                <h2>Web Developer</h2>
+                <p> June | 2024</p>
+                <p>Get Internship as Web Developer in WebGapp for 30 Days</p>
+            </div>
+        
+            <div class="experience-item">
+                <h2>Film Editor</h2>
+                <p>Independent Projects | 2024</p>
+                <p>Worked as a film editor on several short films, overseeing the editing process from raw footage to final cut.</p>
+            </div>
+            <div class="experience-item">
+                <h2>Color Artist</h2>
+                <p>Independent Projects | 2024</p>
+                <p>Worked as a Color Artist on several short films, overseeing the editing process from raw color to final Grade.</p>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; Geethan S @ 2024</p>
+        </footer>
+</body>
+</html>

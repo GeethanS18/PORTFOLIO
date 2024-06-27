@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+header.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://wallpapercave.com/wp/wp2700772.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #0c0c0c;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.intro {
+    padding: 20px;
+    background: rgb(164, 157, 157);
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            
+            <ul>
+                <li><a href="Home1.html">Home</a></li>
+                <li><a href="About1.html">About</a></li>
+                <li><a href="ex.html">Experience</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="intro">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hyy,I am Happy to see you here!. Check My profile.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Geethan S @ 2024</p>
+    </footer>
+</body>
+</html>
